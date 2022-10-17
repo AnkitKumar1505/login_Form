@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/brain.js"></script>
+    <title>REGISTRATION</title>
+
+    <style>
+        #f_submit{
+            margin: 15px 0;
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+    </style>
+  
+</head>
+<body>
+    <!-- Container Starts -->
+       <div class="container">
+
+         <!-- header Starts -->
+
+         <header>REGISTRATION</header>
+
+         <!-- header ends -->
+
+           <form onsubmit="return myfun()" action="" autocomplete="on" name="forms">
+
+        <p>*Please fill in this form to create an account.</p>
+
+        
+        <hr>
+        <!-- persnol info starts -->
+
+        <label for="f_name">First Name</label>
+        <input type="text" name="f_name" id="name"  placeholder="Ankit"><span id="n_message"></span><br>
+
+        <label for="m_name">Middle Name</label>
+        <input type="text" name="m_name" id="name"><span id="n_message"></span><br>
+
+        <label for="l_name">Last Name</label>
+        <input type="text" name="l_name" id="lname" placeholder="Kumar">
+        <span id="ln_message"></span><br>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="other">
+
+            <div> <p id="g_message" style="color: red;"></p></div>
+
+        </fieldset>
+
+        
+
+        <label for="phone">Contact No :</label>
+        <input type="tel" name="phone" id="phone" inputmode="numeric" value=""><span id="contact_message"></span><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob"><br>
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email"  placeholder="*****@gmail.com"><span id="email_message"></span><br>
+
+        <label for="address">Address</label>
+        <textarea name="address" id="address" cols="30" rows="10" placeholder="**  Enter Address  **"></textarea><span id="address_message"></span> <br>
+
+        <label for="pincode">Pincode</label>
+        <input type="text" name="pincode" id="pincode"  placeholder="***123"><span id="pin_message"></span><br>
+
+        <!-- persnal info ends -->
+
+        <input type="submit" value="Submit" id="f_submit">
+
+    </form>
+
+</div>
+
+       <!-- container Ends -->
+</body>
+</html>
